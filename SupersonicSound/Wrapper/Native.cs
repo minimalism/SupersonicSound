@@ -32,10 +32,10 @@ namespace SupersonicSound.Wrapper
             var fileName = name.Split('.')[0];
             if (Environment.Is64BitProcess)
             {
-                directory = "x86_64";
+                directory = "x64";
             }
 
-            var path = Path.Combine(Environment.CurrentDirectory, "Dependencies", directory, name);
+            var path = Path.Combine(Environment.CurrentDirectory, directory, name);
 
             lock (LoadLock)
             {
