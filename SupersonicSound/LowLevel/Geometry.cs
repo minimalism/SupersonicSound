@@ -1,9 +1,9 @@
-﻿using System.Numerics;
-using FMOD;
+﻿using FMOD;
 using SupersonicSound.Extensions;
 using SupersonicSound.Wrapper;
 using System;
 using System.Linq;
+using Microsoft.Xna.Framework;
 
 namespace SupersonicSound.LowLevel
 {

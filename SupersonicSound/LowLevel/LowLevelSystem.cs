@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Numerics;
 using System.Text;
 using FMOD;
+using Microsoft.Xna.Framework;
 using SupersonicSound.Extensions;
 using SupersonicSound.Studio;
 using SupersonicSound.Wrapper;
