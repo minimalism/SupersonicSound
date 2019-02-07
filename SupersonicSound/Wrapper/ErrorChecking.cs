@@ -3,6 +3,7 @@ using System.Linq;
 using FMOD;
 using SupersonicSound.Exceptions;
 using System;
+using System.Diagnostics;
 
 namespace SupersonicSound.Wrapper
 {
@@ -43,6 +44,7 @@ namespace SupersonicSound.Wrapper
             return value.Value;
         }
 
+        [DebuggerStepThrough]
         internal static T? CheckBox<T>(this RESULT result, T value, IReadOnlyList<RESULT> suppress = null) where T : struct
         {
             if (suppress != null && suppress.Contains(result))
@@ -52,6 +54,7 @@ namespace SupersonicSound.Wrapper
             return value;
         }
 
+        [DebuggerStepThrough]
         public static bool Check(this RESULT result, IReadOnlyList<RESULT> suppress)
         {
             if (suppress != null && suppress.Contains(result))
@@ -61,6 +64,7 @@ namespace SupersonicSound.Wrapper
             return true;
         }
 
+        [DebuggerStepThrough]
         public static void Check(this RESULT result)
         {
             switch (result)
